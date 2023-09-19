@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+    <style>
+        table,th,tr,td{                       /* it will apply styling to entire table */
+            border: 1px solid white;        /* defines the border of width type and color*/
+            border-collapse: collapse;        /* if you want to collapse the borders between cells*/
+            border-radius: 10px;              /* can be used to make borders rounded*/
+            text-align: center;
+        }
+        tr,th,td{
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        th,td{
+            padding: 15px;                     /* it is the space between the text and the border*/
+            border-spacing: 20px;              /* it is the spacse between each cells*/
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: blueviolet; color: blanchedalmond;">Tables and Lists</h1>
+    <table style="width: 80%;" align="center">     <!-- width will set the width of entire table-->
+        <tr>                                       <!--align will align the table in the center of the page-->
+            <th colspan="3"> Table </th>           <!--Colspan is used to combine specified number of colummns into one-->
+        </tr>
+        <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Gaurav</td>
+            <td rowspan="2">24</td>               <!-- rowspan is used to combine specified number of rows into 1-->
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Suraj</td>
+        </tr>
+    </table>
+</body>
+</html>
