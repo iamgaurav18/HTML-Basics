@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript in HTML</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: palevioletred;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p{
+            background-color: mediumspringgreen;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .changecolor{
+            color: black;
+        }
+        div{
+            width: fit-content;
+            margin: 0 auto;
+        }
+        button{
+            background-color: darkviolet;
+            padding: 10px;
+            border-radius: 10px;
+            color: aliceblue;
+            box-shadow: 10px;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript in HTML</h1>
+    <p id="para">Javascript is basically used to add dynamic content in your page. <br>This can be done via using script tag that will contain the acript or a link to external script within the src attribute</p>
+    <div>
+        <button type="button" onClick="changecolor()">
+            Click me to change color 
+        </button>
+        <button type="button" onclick="changeText()">
+            Click me to change Text
+        </button>
+    </div>    
+    <script>
+        c=0
+        function changeText(){
+            document.getElementById("para").innerHTML="Hello WOrld";
+        }
+        function changecolor(){
+            c=c+1;
+            if(c%2==0){
+                document.getElementsByTagName("p")[0].style.color="black";
+            }
+            else{
+                document.getElementsByTagName("p")[0].style.color="yellow";
+            }
+        }
+    </script>
+</body>
+</html>
