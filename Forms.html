@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        div{
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Forms</h1>
+    </div>
+    <div>
+        <form>
+            <label for="name">Enter your full name:</label><br>
+            <input type="text" name="fname"><br>    <!--Each input must have a name attribute otherwise no inputs will be submitted when you submit the form-->
+            <label for="age">Enter your age:</label><br>
+            <input type="text" name="age"><br>
+            <label for="mobile">Enter your Mobile Number</label><br>
+            <input type="text" name="mobile"><br>
+            <label for="gender">Select your gender</label><br>
+            <input type="radio" name="gender" id="male">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="gender">Female</label><br>
+            <label for="income">Sources of income</label>
+            <input type="checkbox" name="Govt">
+            <label for="govt">Govt. Job</label><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+<!--we have different attributes in forms-->
+<!-- action attribute defines the action to which form will submit the data to -->
+<!-- target attribute defines where the response should be displayed _blank, _self, _top, _parent, framename. check in detail what each value do -->
+
+<!-- method defines the type of method used for submitting the data GET/POST -->
+<!-- GET METHODS 
+Appends the form data to the URL, in name/value pairs
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+The length of a URL is limited (2048 characters)
+Useful for form submissions where a user wants to bookmark the result
+GET is good for non-secure data, like query strings in Google -->
+
+<!-- POST METHODS 
+Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+POST has no size limitations, and can be used to send large amounts of data.
+Form submissions with POST cannot be bookmarked-->
+
+<!-- Autocomplete if it is on it will enable autocomplte in the input based on users previous inputs -->
